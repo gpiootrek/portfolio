@@ -1,0 +1,27 @@
+@use "../util" as *;
+
+.hero {
+  color: var(--white);
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__heading {
+    font-size: rem(48);
+    &::selection {
+      color: rgba(191, 61, 92, 1);
+      background: rgba(16, 70, 134, 1);
+    }
+  }
+
+  &__overview {
+    margin-top: 12px;
+    font-size: rem(32);
+    color: #ccc;
+    font-weight: 300;
+    text-align: center;
+  }
+}

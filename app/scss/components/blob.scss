@@ -2,11 +2,13 @@
   position: absolute;
   filter: blur(80px);
   width: 50%;
+  min-width: 400px;
   animation: xAxis 40s infinite ease-in;
   &--anim {
     position: absolute;
     filter: blur(90px);
     width: 50%;
+    min-width: 400px;
     animation: yAxis 40s infinite ease-in;
   }
 }
