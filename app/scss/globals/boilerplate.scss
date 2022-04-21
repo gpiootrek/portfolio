@@ -13,5 +13,11 @@ html {
 body {
 	margin: 0;
 	padding: 0;
+	position: relative;
+	background: var(--dark-purple);
 }
 
+.bg {
+	position: absolute;
+	inset: 0;
+}

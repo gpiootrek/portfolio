@@ -1,0 +1,30 @@
+.blob {
+  position: absolute;
+  filter: blur(80px);
+  width: 50%;
+  animation: xAxis 40s infinite ease-in;
+  &--anim {
+    position: absolute;
+    filter: blur(90px);
+    width: 50%;
+    animation: yAxis 40s infinite ease-in;
+  }
+}
+
+@keyframes xAxis {
+  25% {
+    transform: translateX(40%);
+  }
+  75% {
+    transform: translateX(-40%);
+  }
+}
+
+@keyframes yAxis {
+  50% {
+    transform: translateY(-30%);
+  }
+  75% {
+    transform: translateY(25%);
+  }
+}
