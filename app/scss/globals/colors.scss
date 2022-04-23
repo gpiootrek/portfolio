@@ -4,4 +4,10 @@
   --white: hsl(0, 100%, 100%);
   --primary-blue: hsl(213, 79%, 29%);
   --secondary-blue: hsl(213, 58%, 36%);
+  --blue-gradient-from: #6AFFF6;
+  --blue-gradient: linear-gradient(
+    90deg,
+    var(--blue-gradient-from) 0%,
+    var(--primary-blue) 100%
+  );
 }

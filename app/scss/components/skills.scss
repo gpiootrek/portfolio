@@ -1,0 +1,26 @@
+@use "../util" as *;
+
+.skills {
+  &__heading {
+      margin-top: 16px;
+      font-size: rem(24);
+      font-weight: 400;
+      color: var(--white);
+  }
+  &__list {
+      margin: 8px 0 16px;
+      font-size: rem(18);
+      width: 100%;
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  &__item {
+  }
+  &__icon {
+  }
+  &__text {
+      color: var(--white);
+  }
+}

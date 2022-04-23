@@ -1,1 +1,48 @@
-@use '../util' as *;
+@use "../util" as *;
+
+.section {
+  max-width: rem(1200);
+  margin: auto;
+
+  &__heading {
+    font-size: rem(40);
+    color: var(--white);
+  }
+
+  &__line {
+    width: rem(80);
+    height: rem(5);
+    background: var(--blue-gradient);
+    margin: 10px 0;
+  }
+
+  &__content {
+    padding: 24px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--col {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+  }
+
+  &__text {
+    color: var(--white);
+    font-weight: 300;
+    font-size: rem(24);
+  }
+}
+
+.content {
+  &__image {
+    width: 400px;
+    height: 400px;
+    margin: 0 30px;
+  }
+  &__text-wrapper {
+    width: 600px;
+  }
+}
