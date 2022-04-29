@@ -2,25 +2,31 @@
 
 .skills {
   &__heading {
-      margin-top: 16px;
-      font-size: rem(24);
-      font-weight: 400;
-      color: var(--white);
+    margin-top: 16px;
+    font-size: rem(24);
+    font-weight: 400;
+    color: var(--white);
   }
   &__list {
-      margin: 8px 0 16px;
-      font-size: rem(18);
-      width: 100%;
-      list-style-type: none;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    margin: 8px 0 16px;
+    font-size: rem(18);
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   &__icon {
+    color: var(--white);
+    font-size: rem(48);
   }
   &__text {
-      color: var(--white);
+    color: var(--white);
   }
 }
