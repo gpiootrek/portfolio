@@ -78,12 +78,6 @@ class BlobGenerator {
   }
 }
 
-// const BLOB_COLORS = ["#BF3D5C", "#104686"];
-// const WIDTH = document.body.scrollWidth;
-// const HEIGHT = document.body.scrollHeight;
-// const W_HEIGHT = window.innerHeight;
-// const BG_SECTIONS = HEIGHT / W_HEIGHT;
-
 const height = document.body.scrollHeight;
 const screenHeight = window.innerHeight;
 const blobGenerator = new BlobGenerator(

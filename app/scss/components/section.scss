@@ -38,10 +38,37 @@
 
 .content {
   &__image {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__image-wrapper {
     width: 400px;
     height: 400px;
     margin: 0 30px;
+    position: relative;
+    transition: all .4s ease;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: -8px;
+      left: -8px;
+      border: 4px solid var(--primary-blue);
+      transition: all .4s ease;
+    }
+
+    &:hover {
+      transform: scale(1.02);
+
+      &:before {
+        transform: translate(16px, 16px);
+      }
+    }
   }
+
   &__text-wrapper {
     width: 600px;
   }
