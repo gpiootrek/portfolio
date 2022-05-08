@@ -23,9 +23,9 @@
     align-items: center;
 
     &--col {
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
     }
   }
 
@@ -47,7 +47,7 @@
     height: 400px;
     margin: 0 30px;
     position: relative;
-    transition: all .4s ease;
+    transition: all 0.4s ease;
 
     &::before {
       content: "";
@@ -57,7 +57,7 @@
       top: -8px;
       left: -8px;
       border: 4px solid var(--primary-blue);
-      transition: all .4s ease;
+      transition: all 0.4s ease;
     }
 
     &:hover {

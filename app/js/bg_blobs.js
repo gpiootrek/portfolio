@@ -59,11 +59,14 @@ class BlobGenerator {
     let i = 0;
     document.querySelectorAll(".blob").forEach((blob, index) => {
       const left = Math.floor((Math.random() * this.width) / 2);
-      const top =
-        Math.floor((Math.random() * this.screenHeight) / 2) +
-        i * this.screenHeight;
+      let top;
+      do {
+        top =
+          Math.floor((Math.random() * this.screenHeight) / 2) +
+          (i - 2 * Math.random()) * this.screenHeight;
+      } while (top > this.height);
       const opacity = Math.random() / 4;
-      blob.style.top = `${top}px`;
+      blob.style.top = `${top > this.height ? top - 1000 : top}px`;
       blob.style.left = `${left}px`;
       blob.style.opacity = `${opacity}`;
 

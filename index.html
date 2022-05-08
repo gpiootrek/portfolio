@@ -176,35 +176,47 @@
       <section id="projects" class="section">
         <h2 class="section__heading">Projects</h2>
         <div class="section__line"></div>
+
         <div class="section__content section__content--col">
-          <img src="" alt="" class="project__thumbnail" />
-          <div class="project__overview">
-            <h3 class="project__heading">Segredu</h3>
-            <span class="project__note"
-              >&#127941; 1st place in Hackathon Idea Kielce 2019</span
-            >
-            <p class="project__description">
-              We developed our project which have won the Hackathon. During 2
-              years of work on that, we were attending some courses and business
-              meetings. Thanks to all of that I improved my communication and
-              teamwork skills. Moreover, I experienced a lot about planning
-              work, hitting deadlines and working under pressure.
-            </p>
+          <div class="project">
+            <img src="" alt="" class="project__thumbnail" />
+            <div class="project__overview">
+              <h3 class="project__heading">Segredu</h3>
+              <span class="project__note"
+                >&#127941; 1st place in Hackathon Idea Kielce 2019</span
+              >
+              <p class="project__description">
+                We developed our project which have won the Hackathon. During 2
+                years of work on that, we were attending some courses and
+                business meetings. Thanks to all of that I improved my
+                communication and teamwork skills. Moreover, I experienced a lot
+                about planning work, hitting deadlines and working under
+                pressure.
+              </p>
+              <ul class="project__skills">
+                <li class="project__skills__item">HTML</li>
+                <li class="project__skills__item">CSS</li>
+                <li class="project__skills__item">SCSS</li>
+                <li class="project__skills__item">JavaScript</li>
+                <li class="project__skills__item">Teamwork</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="project project--reversed">
-          <img src="" alt="" class="project__thumbnail" />
-          <div class="project__overview">
-            <h3 class="project__heading">Traveler</h3>
-            <span class="project__note"
-              >&#127757; Travel planning and tracking app</span
-            >
-            <p class="project__description">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
-              libero blanditiis perferendis nulla minus harum reiciendis illum
-              molestiae at consequuntur sapiente dicta expedita nam corporis
-              omnis ipsam unde, praesentium soluta.
-            </p>
+          <div class="project project--reversed">
+            <img src="" alt="" class="project__thumbnail" />
+            <div class="project__overview">
+              <h3 class="project__heading">Lorem, ipsum.</h3>
+              <span class="project__note"
+                >&#127757; Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.</span
+              >
+              <p class="project__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
+                libero blanditiis perferendis nulla minus harum reiciendis illum
+                molestiae at consequuntur sapiente dicta expedita nam corporis
+                omnis ipsam unde, praesentium soluta.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -219,21 +231,25 @@
         </ul>
         <h2 class="section__heading contact__heading">Let's stay in touch</h2>
         <form action="" class="contact__form">
-          <input
-            type="email"
-            name="email"
-            id=""
-            class="form__input"
-            placeholder="Your e-mail"
-          />
-          <textarea
-            name="message"
-            id=""
-            class="form__textarea"
-            cols="30"
-            rows="10"
-            placeholder="Message..."
-          ></textarea>
+          <span class="form__input-container">
+            <input
+              type="email"
+              name="email"
+              id=""
+              class="form__input"
+              placeholder="Your e-mail"
+            />
+          </span>
+          <span class="form__input-container">
+            <textarea
+              name="message"
+              id=""
+              class="form__input form__textarea"
+              cols="30"
+              rows="10"
+              placeholder="Message..."
+            ></textarea>
+          </span>
           <button type="submit" class="form__button">Send</button>
         </form>
       </section>

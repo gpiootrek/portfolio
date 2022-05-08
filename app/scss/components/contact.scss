@@ -1,0 +1,77 @@
+@use "../util" as *;
+
+.contact {
+  &__links {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+  }
+  &__link {
+    color: var(--white);
+    font-size: rem(20);
+    font-weight: 300;
+  }
+  &__heading {
+    text-align: center;
+    margin: 24px;
+  }
+  &__form {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.form {
+  &__input {
+    width: 460px;
+    height: 48px;
+    background: linear-gradient(
+      90deg,
+      rgba(191, 61, 92, 0.2) 15.28%,
+      rgba(16, 70, 134, 0.2) 86.67%
+    );
+    position: relative;
+    border: none;
+    padding: 6px 12px;
+    border-bottom: 1px solid var(--secondary-blue);
+    font-family: inherit;
+    color: var(--white);
+    font-size: rem(18);
+    font-weight: 300;
+
+    &::placeholder {
+      color: inherit;
+      font-size: inherit;
+      font-weight: inherit;
+    }
+
+    &:focus {
+      outline: 1px solid var(--secondary-blue);
+    }
+  }
+
+  &__textarea {
+    height: 144px;
+    margin: 16px;
+    resize: none;
+  }
+
+  &__button {
+    width: 230px;
+    padding: 12px;
+    font-family: inherit;
+    border: none;
+    background: linear-gradient(
+      90deg,
+      rgba(191, 61, 92, 1) 15.28%,
+      rgba(16, 70, 134, 1) 86.67%
+    );
+    text-transform: uppercase;
+    color: var(--white);
+    cursor: pointer;
+    margin-bottom: 24px;    
+  }
+}

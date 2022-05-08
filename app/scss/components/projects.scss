@@ -1,0 +1,51 @@
+@use "../util" as *;
+
+.project {
+  display: flex;
+  align-items: center;
+
+  &__thumbnail {
+    width: 400px;
+    height: 400px;
+    margin: 32px;
+  }
+
+  &__overview {
+      display: flex;
+      flex-direction: column;
+  }
+
+  &__heading {
+    color: var(--white);
+    font-size: rem(40);
+  }
+
+  &__note {
+    color: var(--white);
+    font-weight: 300;
+    font-size: rem(18);
+    margin: 12px 0;
+  }
+
+  &__description {
+    color: var(--white);
+    font-weight: 300;
+    font-size: rem(24);
+  }
+
+  &__skills {
+    list-style-type: none;
+    display: flex;
+    &__item {
+      padding: 4px 12px;
+      background: var(--blue-gradient);
+      border-radius: 8px;
+      margin: 12px 16px 0 0;
+      font-weight: 700;
+    }
+  }
+
+  &--reversed {
+    flex-direction: row-reverse;
+  }
+}
