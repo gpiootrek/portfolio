@@ -1,21 +1,25 @@
 @use "../util" as *;
 
 .header {
+  position: fixed;
+  top: 0;
+  backdrop-filter: blur(12px);
+  z-index: 1;
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 20px;
   &__logo {
-      font-size: rem(22);
+    font-size: rem(22);
     color: var(--white);
   }
 }
 
 .nav {
-    display: flex;
+  display: flex;
 
-    &__link {
+  &__link {
     color: var(--white);
     font-size: rem(20);
     margin: 0 50px;
@@ -41,6 +45,5 @@
         transform: translateX(0);
       }
     }
-
   }
 }

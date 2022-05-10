@@ -64,7 +64,7 @@ class BlobGenerator {
         top =
           Math.floor((Math.random() * this.screenHeight) / 2) +
           (i - 2 * Math.random()) * this.screenHeight;
-      } while (top > this.height);
+      } while (top > this.height - 1000);
       const opacity = Math.random() / 4;
       blob.style.top = `${top > this.height ? top - 1000 : top}px`;
       blob.style.left = `${left}px`;
@@ -84,6 +84,7 @@ class BlobGenerator {
 const height = document.body.scrollHeight;
 const screenHeight = window.innerHeight;
 const blobGenerator = new BlobGenerator(
+  // blobs amount = "scroll sections" * 10
   Math.round(height / screenHeight) * 10,
   ["#BF3D5C", "#104686"],
   document.body.scrollWidth,

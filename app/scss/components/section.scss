@@ -3,9 +3,9 @@
 .section {
   max-width: rem(1200);
   margin: auto;
+	scroll-margin: 72px;
 
   &__heading {
-    font-size: rem(40);
     color: var(--white);
   }
 
