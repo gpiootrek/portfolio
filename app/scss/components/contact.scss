@@ -5,18 +5,26 @@
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
+    flex-wrap: wrap;
   }
+
   &__link {
     color: var(--white);
     font-size: rem(20);
     font-weight: 300;
     display: flex;
     align-items: center;
+    transition: all .3s ease;
+    &:hover {
+      color: var(--secondary-blue);
+    }
   }
+
   &__heading {
     text-align: center;
     margin: 24px;
   }
+
   &__form {
     margin: auto;
     display: flex;
@@ -24,6 +32,7 @@
     align-items: center;
     flex-direction: column;
   }
+  
   &__icon {
     width: 32px;
     margin: 0 6px;

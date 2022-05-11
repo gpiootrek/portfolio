@@ -4,6 +4,11 @@
   display: flex;
   align-items: center;
 
+  @include breakpoint-down(medium) {
+    flex-direction: column;
+    justify-content: center;
+  }
+
   &__thumbnail {
     width: 400px;
     height: 400px;
@@ -11,8 +16,8 @@
   }
 
   &__overview {
-      display: flex;
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
 
   &__heading {
@@ -31,11 +36,16 @@
     color: var(--white);
     font-weight: 300;
     font-size: rem(24);
+    @include breakpoint-down(medium) {
+      font-size: rem(20);
+    }
   }
 
   &__skills {
     list-style-type: none;
     display: flex;
+    padding-bottom: 24px;
+    border-bottom: 2px solid var(--primary-pink);
     &__item {
       padding: 4px 12px;
       background: var(--blue-gradient);
@@ -47,5 +57,9 @@
 
   &--reversed {
     flex-direction: row-reverse;
+
+    @include breakpoint-down(medium) {
+      flex-direction: column;
+    }
   }
 }

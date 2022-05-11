@@ -33,6 +33,10 @@
   &__icon {
     width: 64px;
     margin-top: 8px;
+
+    @include breakpoint-down(medium) {
+      width: 48px;
+    }
   }
 
   &__text {
