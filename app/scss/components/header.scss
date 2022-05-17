@@ -107,3 +107,25 @@
     background: var(--blue-gradient);
   }
 }
+
+.line {
+  &--base {
+    transition: all 0.5s ease;
+    transform: rotate(0) translateY(0);
+    opacity: 1;
+  }
+
+  &--hidden {
+    opacity: 0;
+  }
+
+  &--top {
+    transition: all 0.5s ease;
+    transform: rotate(45deg) translateY(26px);
+  }
+
+  &--bottom {
+    transition: all 0.5s ease;
+    transform: rotate(-45deg) translateY(-26px);
+  }
+}
