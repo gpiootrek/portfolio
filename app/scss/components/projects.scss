@@ -3,6 +3,10 @@
 .project {
   display: flex;
   align-items: center;
+  @include breakpoint-down(small) {
+    width: 90vw;
+    margin: auto;
+  }
 
   @include breakpoint-down(medium) {
     flex-direction: column;
@@ -12,17 +16,22 @@
   &__thumbnail {
     width: 400px;
     height: 400px;
-    margin: 32px;
+    @include breakpoint-down(small) {
+      width: 100%;
+      height: auto;
+    }
   }
 
   &__overview {
     display: flex;
     flex-direction: column;
+    padding: 0 20px;
   }
 
   &__heading {
     color: var(--white);
     font-size: rem(40);
+    margin-top: 12px;
   }
 
   &__note {
@@ -46,6 +55,10 @@
     display: flex;
     padding-bottom: 24px;
     border-bottom: 2px solid var(--primary-pink);
+    @include breakpoint-down(small) {
+      width: 90vw;
+      flex-wrap: wrap;
+    }
     &__item {
       padding: 4px 12px;
       background: var(--blue-gradient);

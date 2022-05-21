@@ -15,6 +15,7 @@
     display: flex;
     align-items: center;
     transition: all .3s ease;
+    margin: 8px;
     &:hover {
       color: var(--secondary-blue);
     }
@@ -31,6 +32,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    @include breakpoint-down(small) {
+      width: 90vw; 
+    }
   }
   
   &__icon {
@@ -56,6 +60,9 @@
     color: var(--white);
     font-size: rem(18);
     font-weight: 300;
+    @include breakpoint-down(small) {
+      width: 90vw; 
+    }
 
     &::placeholder {
       color: inherit;

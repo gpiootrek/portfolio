@@ -15,6 +15,10 @@
     list-style-type: none;
     display: flex;
     align-items: center;
+    @include breakpoint-down(small) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &__item {

@@ -11,6 +11,7 @@
 
   &__heading {
     font-size: rem(48);
+    text-align: center;
     &::selection {
       color: rgba(191, 61, 92, 1);
       background: rgba(16, 70, 134, 1);
